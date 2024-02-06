@@ -8,6 +8,7 @@ import Categories from "@/components/categories";
 import MoviesSection from "@/components/movies-section";
 
 const HomeContainer = ({ selectedCategory }) => {
+  console.log(selectedCategory?.movies.length);
   return (
     <>
       <FeaturedMovie movie={Movies.results[14]} />

@@ -2,7 +2,8 @@ import HomeContainer from "@/containers/Home";
 import Link from "next/link";
 import Movies from '@/mocks/movies.json'
 
-export default function Home({ params }) {
+
+  function Home ({ params }) {
   let selectedCategory;
 
   if(params.category?.length > 0) {
@@ -14,3 +15,5 @@ export default function Home({ params }) {
     movies: selectedCategory ? Movies.results.slice(0,7) : []
   }}/>;
 }
+
+export default Home
