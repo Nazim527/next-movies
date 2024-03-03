@@ -24,7 +24,7 @@ const HomeContainer = ({ selectedCategory }) => {
         movies={Movies.results.slice(1, 9)}
       />
       <MoviesSection
-        title={"Popular Films"}
+        title={"IMDB High Films"}
         movies={Movies.results.slice(8, 15)}
       />
     </>
