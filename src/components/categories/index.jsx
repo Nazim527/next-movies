@@ -8,7 +8,7 @@ function Categories({ categories }) {
     <div className={"categories"}>
       {categories.map((category) => (
         <Link
-        key={category.id}
+          key={category.id}
           className={"category"}
           href={`/${category.id}`}
         >
