@@ -3,13 +3,7 @@ import { notFound } from 'next/navigation'
 import MovieContainers from '@/containers/movie'
 import Movies from '@/mocks/movies.json'
 import { instance } from '@/server'
-
-
-const  getMoviesDetail = async (movieId) => {
-  const res = await instance.get(`/movie/${movieId}`)
-
-  return res.data
-}
+import { getMoviesDetail } from '@/server/movie'
 
 
 const MoviePage = async ({params, searchParams}) => {
